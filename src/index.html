@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Navbar w-auto h-16 bg-maincolor">
+      <div
+        class="container h-full mx-auto py-3 px-6 flex justify-between md:px-4"
+      >
+        <div class="Brand h-full my-auto flex justify-between">
+          <div class="Icon w-12">
+            <img
+              src="img/icon.jpg"
+              class="rounded-full h-full block"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="Brandname text-2xl font-extrabold text-white my-auto ml-2"
+          >
+            Brand Name
+          </div>
+        </div>
+        <div
+          class="icon-collapse w-12 h-12 hover:cursor-pointer md:hidden"
+          id="menubutton"
+          onclick="menu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            class="w-8 h-10 m-auto"
+            viewBox="0 0 50 50"
+            style="fill: #ffff"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="navbarbutton absolute w-full left-0 mt-12 invisible bg-gray-400 divide-y text-center text-lg font-bold text-white my-auto md:visible divide-none md:bg-maincolor md:static md:mt-0 md:w-fit md:transition-none"
+          id="navbargroup"
+        >
+          <a href="#" class="mr-4 block w-full md:inline">Home</a>
+          <a href="#" class="mr-4 block w-full md:inline">About</a>
+          <a href="#" class="mr-4 block w-full md:inline">Contact</a>
+          <a href="#" class="mr-4 block w-full md:inline">News</a>
+          <div class="w-full h-auto py-2 md:inline">
+            <div
+              class="img-dock w-6 h-6 mx-auto rounded-full hover:cursor-pointer inline-block overflow-hidden bg-gray-900"
+            >
+              <img
+                src="img/profile.JPG"
+                alt=""
+                srcset=""
+                class="object-scale-down h-12"
+              />
+            </div>
+
+            <div
+              class="accountname text-base text-gray-800 hover:cursor-pointer md:hidden"
+            >
+              Ditotisi Rasyid
+            </div>
+            <div
+              class="logout text-sm text-gray-300 hover:cursor-pointer md:hidden"
+            >
+              Log out
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main container px-6 mx-auto" id="maincontainer">
+      <!-- Jumbotron -->
+      <div
+        class="jumbotron w-full h-1/2 mt-4 bg-black overflow-hidden border-gray-500 rounded-sm border-solid border-2 md:h-80"
+      >
+        <img
+          class="w-full object-fill"
+          src="img/jumbotron1.jpg"
+          alt=""
+          id="jombotronimage"
+          srcset=""
+        />
+        <!-- Button Next & Previous -->
+      </div>
+      <a
+        href="#"
+        class="bg-gray-200 top-56 absolute opacity-90 block w-8 h-8 text-gray-500 text-center text-lg px-1 rounded-full ml-2 hover:transition transition-transform"
+        >&#10094;</a
+      >
+      <a href="#" onclick="gantigambar()">&#10095;</a>
+      <div class="line w-full h-0.5 bg-gray-400 rounded-full my-5"></div>
+      <!-- About  -->
+      <div class="About text-center my-4">
+        <div class="h1 text-2xl font-extrabold mb-2">About</div>
+        <div class="about-explanation w-3/5 mx-auto">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            consequatur facilis aliquid excepturi iusto alias laboriosam
+            deserunt, nisi accusantium voluptatem ipsum maxime exercitationem
+            atque, neque vel cupiditate dolore libero! Debitis asperiores
+            corrupti mollitia inventore nam iure, eum vel similique facilis
+            natus modi quasi vitae vero. Vitae facere deleniti deserunt tenetur
+            recusandae cumque illum at aliquid, veniam fugiat, error saepe
+            delectus soluta impedit. Cum odit nisi, eaque porro, qui laboriosam
+            nam, minima at amet illum doloremque atque maiores enim quidem
+            aliquam! Velit quisquam inventore quibusdam obcaecati itaque, rerum,
+            id necessitatibus nostrum quis facilis.
+          </p>
+        </div>
+      </div>
+
+      <div class="line w-full h-0.5 bg-gray-400 rounded-full my-10"></div>
+      <!-- Profile -->
+      <div class="profile text-center my-4">
+        <div class="h1 text-2xl font-extrabold mb-2">About Me</div>
+        <div
+          class="image-profile h-16 w-16 bg-gray-500 mx-auto overflow-hidden rounded-full my-4"
+        >
+          <img src="img/profile.JPG" alt="" srcset="" class="w-64 mt-3" />
+        </div>
+        <div class="profile-explanation w-3/5 mx-auto">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            consequatur facilis aliquid excepturi iusto alias laboriosam
+            deserunt, nisi accusantium voluptatem ipsum maxime exercitationem
+            atque, neque vel cupiditate dolore libero! Debitis asperiores
+            corrupti mollitia inventore nam iure, eum vel similique facilis
+            natus modi quasi vitae vero. Vitae facere deleniti deserunt tenetur
+            recusandae cumque illum at aliquid, veniam fugiat, error saepe
+            delectus soluta impedit. Cum odit nisi, eaque porro, qui laboriosam
+            nam, minima at amet illum doloremque atque maiores enim quidem
+            aliquam! Velit quisquam inventore quibusdam obcaecati itaque, rerum,
+            id necessitatibus nostrum quis facilis.
+          </p>
+        </div>
+      </div>
+      <!-- Card Group -->
+      <div class="card-group flex w-full">
+        <div
+          class="card w-2/5 h-82 mx-auto border-solid border-2 border-gray-400 rounded-md mt-5"
+        >
+          <img
+            src="img/jumbotron.jpg"
+            alt=""
+            srcset=""
+            class="block object-contain w-full mx-auto overflow-hidden"
+          />
+          <div class="title-card text-lg mx-auto p-2 mb-2">
+            <figcaption class="font-bold">Lapangan Baseball</figcaption>
+            <div class="details text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quas sapiente reiciendis.
+            </div>
+            <div class="tombol flex justify-end">
+              <a
+                href="#"
+                class="w-24 border-solid border-indigo-500 border-2 text-sm text-center rounded-md text-indigo-800"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-2/5 h-82 mx-auto border-solid border-2 border-gray-400 rounded-md mt-5"
+        >
+          <img
+            src="img/jumbotron.jpg"
+            alt=""
+            srcset=""
+            class="block object-contain w-full mx-auto overflow-hidden"
+          />
+          <div class="title-card text-lg mx-auto p-2 mb-2">
+            <figcaption class="font-bold">Lapangan Baseball</figcaption>
+            <div class="details text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quas sapiente reiciendis.
+            </div>
+            <div class="tombol flex justify-end">
+              <a
+                href="#"
+                class="w-24 border-solid border-indigo-500 border-2 text-sm text-center rounded-md text-indigo-800"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
